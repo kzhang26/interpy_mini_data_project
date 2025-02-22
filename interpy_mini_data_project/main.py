@@ -5,6 +5,7 @@ import numpy as np
 df = pd.read_csv("spotify_history.csv")
 df_cleaned = df.dropna()
 
+# Code for ms_played vs. reason_start
 '''fig, ax = plt.subplots()
 ax.set(xlabel='Reason Start', ylabel='Milliseconds Played', title='MS Played vs. Reason Start')
 ax.grid()
@@ -16,6 +17,7 @@ for reason in reasonStart:
     msPlayed1 += [numMS]
 ax.bar(reasonStart, msPlayed1)'''
 
+# Code for ms_played vs. reason_end
 fig, ax = plt.subplots()
 ax.set(xlabel='Reason End', ylabel='Milliseconds Played', title='MS Played vs. Reason End')
 ax.grid()
